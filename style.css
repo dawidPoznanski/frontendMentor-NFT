@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: hsl(217, 54%, 11%);
+}
+.card {
+    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  background-color: hsl(216, 50%, 16%);
+  width: 350px;
+  height: 600px;
+  border-radius: 15px;
+}
+.icon-view {
+    display: none;
+}
+.nft-img {
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+}
+.card-image:hover .nft-img{
+    z-index: 1;
+    background-color: hsl(178, 100%, 50%);
+    background: url(./images/icon-view.svg);
+    cursor: pointer;
+    opacity: 0.5;
+}
+/* .card-image:hover .icon-view{
+    display: block;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    z-index: 10;
+    top: 10px;
+} */
+
+.card-title {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  padding: 0 20px;
+  color: hsl(0, 0%, 100%);
+}
+.card-title:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.title {
+  font-weight: 600;
+  font-size: 24px;
+}
+.description {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+
+.section-price {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0 20px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+}
+.price {
+  color: hsl(178, 100%, 50%);
+  flex-direction: row;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.time-left {
+  color: hsl(215, 51%, 70%);
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+.section-price p {
+  margin: 10px;
+}
+hr {
+    color: hsl(215, 32%, 27%);
+    width: 90%;
+    height: 1px;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+.creator {
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px 0 20px;
+    width: 100%;
+    align-items: center;
+}
+.creator img {
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 100%);
+    height: 25px;
+    align-items: flex-start;
+}
+.creator p {
+    padding-left: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+span {
+    color:hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+footer {
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+footer a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
